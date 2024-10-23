@@ -17,10 +17,10 @@ class Room {
     String stype;
     int roomNumber;
     int rent;
-    int status; // 0: Available, 1: Booked
+    int status; 
     Customer cust = new Customer();
 
-    // Method to add a room
+    
     Room addRoom(int rno) {
         Room room = new Room();
         room.roomNumber = rno;
@@ -39,7 +39,7 @@ class Room {
         return room;
     }
 
-    // Method to search a room
+
     void searchRoom(int rno, Room[] rooms, int count) {
         int found = 0;
         for (int i = 0; i < count; i++) {
@@ -60,7 +60,6 @@ class Room {
         }
     }
 
-    // Method to display room details
     void displayRoom(Room room) {
         System.out.println("\nRoom Number: " + room.roomNumber);
         System.out.println("Type AC/Non-AC: " + room.ac);
@@ -74,7 +73,6 @@ class HotelMgmt extends Room {
     int count = 0;
     Room[] rooms = new Room[100];
 
-    // Method for guest check-in
     void checkIn() {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter Room number: ");
@@ -111,7 +109,7 @@ class HotelMgmt extends Room {
         }
     }
 
-    // Method to display available rooms
+    
     void getAvailRoom() {
         int found = 0;
         for (int i = 0; i < count; i++) {
@@ -125,7 +123,7 @@ class HotelMgmt extends Room {
         }
     }
 
-    // Method to search a customer
+
     void searchCustomer(String name) {
         int found = 0;
         for (int i = 0; i < count; i++) {
@@ -141,7 +139,7 @@ class HotelMgmt extends Room {
         }
     }
 
-    // Method for guest check-out
+
     void checkOut(int rno) {
         int found = 0;
         int days;
@@ -169,7 +167,7 @@ class HotelMgmt extends Room {
         }
     }
 
-    // Method to display guest summary report
+    
     void guestSummaryReport() {
         if (count == 0) {
             System.out.println("\nNo Guest in Hotel!");
