@@ -52,8 +52,8 @@ Manages room-related data like room number, type (AC/non-AC), comfort level, siz
 Extends the Room class and manages higher-level operations such as customer check-in, check-out, searching for customers, and generating reports.
 
 ## Technologies Used:
-# Java: The entire application is built using Java, utilizing Object-Oriented Programming (OOP) principles.
-# Scanner: Used to take user input from the console.
+Java: The entire application is built using Java, utilizing Object-Oriented Programming (OOP) principles.
+Scanner: Used to take user input from the console.
 ## How It Works:
 The system runs in a loop, displaying a menu of options like managing rooms, checking in/out, searching for customers, and displaying available rooms.
 Based on the user’s choice, the corresponding operation is executed.
